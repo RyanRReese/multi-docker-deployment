@@ -5,24 +5,28 @@
             "name": "client",
             "image": "rholtschneider2/multi-client",
             "hostname": "client",
+            "memory": 128,
             "essential": false
         },
         {
             "name": "worker",
             "image": "rholtschneider2/multi-worker",
             "hostname": "worker",
+            "memory": 128,
             "essential": false
         },  
         {
             "name": "server",
             "image": "rholtschneider2/multi-server",
             "hostname": "api",
+            "memory": 128,
             "essential": false
         },
         {
             "name": "nginx",
             "image": "rholtschneider2/multi-nginx",
             "essential": true,
+            "memory": 128,
             "portMappings":[
                 {
                     "hostPort":80,
